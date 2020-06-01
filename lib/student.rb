@@ -87,7 +87,7 @@ class Student
      select *
      from students
      where grade = 10
-     limit number 
+     limit number
     SQL
     DB[:conn].execute(sql).map do |value|
     end
@@ -102,5 +102,5 @@ class Student
     SQL
     DB[:conn].execute(sql).map do |value|
     end
-  end 
+  end
 end
