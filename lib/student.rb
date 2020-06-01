@@ -76,9 +76,12 @@ class Student
     sql = <<-SQL
      select *
      from students
-     where grade < 12 
+     where grade < 12
     SQL
     DB[:conn].execute(sql).map do |value|
     end
   end
+
+  def self.first_X_students_in_grade_10
+  end 
 end
