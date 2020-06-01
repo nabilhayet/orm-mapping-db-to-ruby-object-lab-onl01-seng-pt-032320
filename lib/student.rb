@@ -103,4 +103,15 @@ class Student
     DB[:conn].execute(sql).map do |value|
     end
   end
+
+  def self.all_students_in_grade_X(grade)
+    sql = <<-SQL
+     select *
+     from students
+     where grade = ?
+     limit 1
+    SQL
+    DB[:conn].execute(sql,grade).map do |value|
+    end
+  end
 end
