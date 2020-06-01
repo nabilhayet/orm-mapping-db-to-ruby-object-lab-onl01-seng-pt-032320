@@ -70,6 +70,5 @@ class Student
     SQL
     DB[:conn].execute(sql).map do |value|
     end
-    value 
   end
 end
