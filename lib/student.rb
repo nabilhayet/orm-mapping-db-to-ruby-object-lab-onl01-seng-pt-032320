@@ -80,7 +80,8 @@ class Student
      from students
      where grade < 12
     SQL
-    DB[:conn].execute(sql).map do |value|
+    DB[:conn].execute(sql).map do |row|
+    new_from_db(row)
     end
   end
 
