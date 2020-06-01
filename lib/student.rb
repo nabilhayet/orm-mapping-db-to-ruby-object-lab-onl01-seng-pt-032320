@@ -70,7 +70,6 @@ class Student
      where grade=9
     SQL
     DB[:conn].execute(sql).map do |value|
-      binding.pry
     end
   end
 
